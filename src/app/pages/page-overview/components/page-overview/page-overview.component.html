@@ -1,0 +1,21 @@
+<div class="container">
+
+  <ng-container *ngIf="customer$ | async as customer">
+    <h2>Our <span class="membershipType">{{customer.membership.type }}</span> insurance products for you:</h2>
+
+    <h2>Active Insurances / Products:</h2>
+    <ng-container *ngIf="(customerProducts$ | async) as ownProducts">
+
+      <app-product *ngFor="let ownProduct of ownProducts" [activeProduct]="true" [product]="ownProduct"></app-product>
+
+      <p *ngIf="ownProducts.length === 0">There are currently no active insurances.
+    </ng-container>
+    <h2>Available Insurances / Products:</h2>
+    <ng-container *ngIf="(availableProducts$ | async) as availableProducts">
+      <app-product *ngFor="let availableProduct of availableProducts" [activeProduct]="false" [product]="availableProduct"></app-product>
+
+      <p *ngIf="availableProducts.length === 0">There are currently no active insurances.
+    </ng-container>
+  </ng-container>
+</div>
+

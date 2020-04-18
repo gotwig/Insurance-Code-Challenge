@@ -1,0 +1,28 @@
+mat-card {
+  max-width: 400px;
+  margin: auto auto;
+  text-align: center;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button, mat-slide-toggle {
+  margin-bottom: 2rem;
+}
+
+:host {
+  display: inline-block;
+  margin: 10px;
+  min-width: 230px;
+}
+
+.subTitle {
+  font-weight: normal;
+  text-transform: UPPERCASE;
+  font-size: 12px;
+}

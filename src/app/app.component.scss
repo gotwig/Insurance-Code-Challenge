@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.expanded-toolbar {
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.router-content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-toolbar class="expanded-toolbar" color="primary">
+    <span>
+      <button mat-button routerLink="/">{{title}}</button>
+      <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+    </span>
+    <div *ngIf="isAuthenticated()" fxLayout="row" fxShow="false" fxShow.gt-xs>
+      <app-user-info></app-user-info>
+    </div>
+    <button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-xs mat-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu #menu="matMenu" x-position="before">
+    <app-user-info mobile="true"></app-user-info>
+  </mat-menu>
+
+  <div class="router-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

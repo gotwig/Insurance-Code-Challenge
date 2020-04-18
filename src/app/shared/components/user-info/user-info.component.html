@@ -1,0 +1,33 @@
+<div *ngIf="!mobile" class="container desktop">
+  <mat-icon>
+    account_circle
+  </mat-icon>
+
+  <div>
+    <ng-container *ngIf="customer$ | async as customer">
+      <span class="customerName">{{customer.name}}</span>
+      <br/>
+      <span> {{customer.membership_type}} |  {{customer.age}} Years</span>
+    </ng-container>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<div *ngIf="mobile" class="container mobile">
+  <mat-icon>
+    account_circle
+  </mat-icon>
+
+  <div>
+    <ng-container *ngIf="customer$ | async as customer">
+      <span class="customerName">{{customer.name}}</span>
+      <br/>
+      <span> {{customer.membership_type}} |  {{customer.age}} Years</span>
+    </ng-container>
+  </div>
+</div>
+
+<button (click)="logout()" mat-menu-item>
+  <mat-icon>exit_to_app</mat-icon>
+  Logout
+</button>

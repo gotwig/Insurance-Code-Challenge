@@ -1,0 +1,15 @@
+{
+  "membership": [
+    {
+      "premium": {
+        "level": 3
+      },
+      "plus": {
+        "level": 2
+      },
+      "basic": {
+        "level": 1
+      }
+    }
+  ]
+}

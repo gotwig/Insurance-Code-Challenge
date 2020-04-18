@@ -1,0 +1,42 @@
+:host ::ng-deep {
+  display: inherit;
+}
+
+.container {
+  display: flex;
+}
+
+.container.mobile {
+  padding: 22px
+}
+
+.container > mat-icon {
+  font-size: 40px;
+}
+
+.container.desktop > mat-icon {
+  margin: 0% 25px;
+}
+
+.container.mobile > mat-icon {
+  margin-left: -13px;
+  margin-right: 22px;
+}
+
+.container > div {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.divider {
+  border-right: 1px solid;
+  margin-left: 24px;
+}
+
+.customerName {
+  text-transform: capitalize;
+}
+
+button, button > mat-icon {
+  color: white;
+}

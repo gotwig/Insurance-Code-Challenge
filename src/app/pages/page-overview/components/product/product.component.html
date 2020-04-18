@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-content>
+    <h3>
+      <span>{{product.name}}</span>
+      <br/>
+      <span class="subTitle">{{product.type}}</span>
+    </h3>
+    <div *ngFor="let price of product.prices">
+      <p>{{price.label}}</p>
+      <span> <b>Fee: {{price.price}} {{price.currency}} / Monthly </b> </span>
+    </div>
+
+    <div *ngIf="product.type === 'sticker'">
+      <p>Amount: {{product.info.amount}}</p>
+      <p>Price: {{product.info.price}} {{product.info.currency}}</p>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button> <span> {{ activeProduct ? 'View status' : 'Learn more' }}  </span></button>
+  </mat-card-actions>
+
+</mat-card>

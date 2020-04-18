@@ -1,0 +1,54 @@
+{
+  "customers": [
+    {
+      "name": "person1",
+      "membership_type": "basic",
+      "password": "password1",
+      "age": "18",
+      "selected_insurances": []
+    },
+    {
+      "name": "person2",
+      "membership_type": "basic",
+      "password": "password2",
+      "age": "65",
+      "selected_insurances": []
+    },
+    {
+      "name": "person3",
+      "membership_type": "premium",
+      "password": "password3",
+      "age": "30",
+      "selected_insurances": []
+    },
+    {
+      "name": "person4",
+      "membership_type": "plus",
+      "password": "password4",
+      "age": "40",
+      "selected_insurances": [
+        "car_insurance",
+        "accident_insurance",
+        "life_insurance"
+      ]
+    },
+    {
+      "name": "person5",
+      "membership_type": "premium",
+      "password": "password5",
+      "age": "45",
+      "selected_insurances": [
+        "accident_insurance"
+      ]
+    },
+    {
+      "name": "person6",
+      "membership_type": "basic",
+      "password": "password6",
+      "age": "0",
+      "selected_insurances": [
+        "life_insurance"
+      ]
+    }
+  ]
+}
