@@ -1,6 +1,6 @@
 # Insurance Code Challenge
 
-[Click here for Demo](https://rlmibqqgx.github.stackblitz.io)
+[Click here for Demo](https://stackblitz.com/github/gotwig/Insurance-Code-Challenge)
 
 
 **I am always interested in constructive criticism.** 
