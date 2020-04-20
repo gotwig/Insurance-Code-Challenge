@@ -27,7 +27,7 @@
   </div>
 </div>
 
-<button (click)="logout()" mat-menu-item>
+<button (click)="logout()" [class.desktop]="!mobile" mat-menu-item>
   <mat-icon>exit_to_app</mat-icon>
   Logout
 </button>
